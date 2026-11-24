@@ -1,0 +1,27 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{	
+		String[] alunos = new String[6];
+		String aluno_buscar;
+	
+	for (int i = 0; i <= 5; i++){ 
+		Console.WriteLine(" INSIRA O NOME DO ALUNO ");
+		alunos[i] = Console.ReadLine();
+	}	
+		for (int i = 0; i <= 5;i++){
+		Console.WriteLine(alunos[i]);
+	}
+	Console.WriteLine("IGITE O NOME QUE DEJESA BUSCAR: ");
+	aluno_buscar = Console.ReadLine();
+		 
+	for (int i = 0; i <= 5; i++) {
+		if (alunos[i] == aluno_buscar){
+			Console.WriteLine("ALUNO ENCONTRADO!");
+		    Console.WriteLine(" O ALUNO " + aluno_buscar + " FOI ENCONTRADO NA POSIÇÃO "
+			     					  + i + " DO VETOR!");
+		}
+	}
+}}
